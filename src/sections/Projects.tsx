@@ -7,9 +7,9 @@ const Projects = () => {
   const projects = [
     {
       title: "FAST (Face Authentication System)",
-      role: "Lead Developer & Security Researcher",
-      description: "Sistem absensi berbasis AI menggunakan OpenCV LBPH. Dirancang dengan validasi ganda dan pemrosesan data lokal yang aman untuk mencegah spoofing dan akses tidak sah.",
-      insight: "Mengimplementasikan langkah-langkah anti-spoofing dengan menganalisis kedalaman wajah dan variasi pencahayaan, memastikan autentikasi dengan tingkat kepercayaan tinggi sebelum memberikan akses sistem.",
+      role: "Lead Developer",
+      description: "Sistem autentikasi berbasis AI yang dirancang untuk presisi dan kecepatan. Menggunakan OpenCV untuk pengenalan wajah dengan fokus pada integritas data dan pemrosesan lokal yang efisien.",
+      insight: "Mengoptimalkan algoritma pengenalan wajah untuk akurasi tinggi di berbagai kondisi pencahayaan, memastikan pengalaman login yang seamless namun tetap terjaga keandalannya.",
       tech: ["Python", "OpenCV", "SQLite", "Tkinter"],
       link: "https://abyfromheaven.github.io/FAST/",
       github: "https://github.com/abyfromheaven/FAST",
@@ -20,8 +20,8 @@ const Projects = () => {
     {
       title: "Learnify LMS Platform",
       role: "Full-Stack Developer",
-      description: "Sistem Manajemen Pembelajaran komprehensif yang dirancang untuk keterlibatan siswa yang dapat diskalakan dan pengiriman konten yang aman.",
-      insight: "Merancang arsitektur RBAC (Role-Based Access Control) untuk memisahkan hak istimewa siswa, guru, dan admin secara ketat, mencegah eskalasi hak istimewa horizontal.",
+      description: "Platform Manajemen Pembelajaran yang komprehensif, dibangun untuk menangani distribusi konten secara efisien dengan skalabilitas yang tinggi.",
+      insight: "Merancang arsitektur database yang efisien dan manajemen akses pengguna yang terstruktur untuk mendukung ribuan pengguna tanpa mengorbankan performa sistem.",
       tech: ["React", "Node.js", "Express", "PostgreSQL"],
       link: "#",
       github: "#",
@@ -29,9 +29,9 @@ const Projects = () => {
     },
     {
       title: "AmanDulu Application",
-      role: "Security Focused Developer",
-      description: "Dasbor pemindaian keamanan proaktif yang mengumpulkan data kerentanan dan menyajikan langkah-langkah remediasi yang dapat ditindaklanjuti untuk tim infrastruktur.",
-      insight: "Mengintegrasikan validasi token CSRF otomatis dan enkripsi data saat istirahat (AES-256) untuk semua laporan kerentanan yang disimpan, menjaga prinsip zero-trust.",
+      role: "System Architect",
+      description: "Dashboard pemantauan sistem proaktif yang menyajikan data performa dan laporan kesehatan infrastruktur secara real-time untuk tim operasional.",
+      insight: "Mengimplementasikan enkripsi data end-to-end dan validasi input yang ketat untuk memastikan integritas laporan yang dihasilkan oleh sistem pemantauan.",
       tech: ["Vue.js", "Python", "Docker", "REST API"],
       link: "#",
       github: "#",
@@ -51,7 +51,7 @@ const Projects = () => {
             className="flex items-center gap-4 mb-4"
           >
             <div className="h-px bg-emerald-500/50 flex-1 max-w-[50px]"></div>
-            <h2 className="text-emerald-400 font-mono text-sm tracking-wider uppercase">Proof of Concept</h2>
+            <h2 className="text-emerald-400 font-mono text-sm tracking-wider uppercase">Project Portfolio</h2>
           </motion.div>
           <motion.h3 
             initial={{ opacity: 0, y: 20 }}
@@ -60,7 +60,7 @@ const Projects = () => {
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-5xl font-bold text-white"
           >
-            Featured <span className="text-slate-500">Ventures</span>
+            Selected <span className="text-slate-500">Works</span>
           </motion.h3>
         </div>
 
@@ -147,11 +147,11 @@ const Projects = () => {
                 <div className="p-6 rounded-2xl bg-slate-800/50 border border-white/5 backdrop-blur-sm text-slate-300 leading-relaxed">
                   <p className="mb-4">{project.description}</p>
                   
-                  {/* Security Insight Block */}
+                  {/* Technical Highlight Block */}
                   <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20">
                     <div className="flex items-center gap-2 mb-2">
-                      <Lock className="w-4 h-4 text-emerald-400" />
-                      <span className="text-emerald-400 font-semibold text-sm">Security Insight</span>
+                      <Layout className="w-4 h-4 text-emerald-400" />
+                      <span className="text-emerald-400 font-semibold text-sm">Technical Highlight</span>
                     </div>
                     <p className="text-sm text-slate-400">"{project.insight}"</p>
                   </div>

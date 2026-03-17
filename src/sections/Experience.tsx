@@ -15,7 +15,7 @@ const Experience = () => {
             className="flex items-center gap-4 mb-4"
           >
             <div className="h-px bg-emerald-500/50 flex-1 max-w-[50px]"></div>
-            <h2 className="text-emerald-400 font-mono text-sm tracking-wider uppercase">Real-World Impact</h2>
+            <h2 className="text-emerald-400 font-mono text-sm tracking-wider uppercase">Strategic Engagement</h2>
           </motion.div>
           <motion.h3 
             initial={{ opacity: 0, y: 20 }}
@@ -24,7 +24,7 @@ const Experience = () => {
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-5xl font-bold text-white mb-6"
           >
-            Core <span className="text-slate-500">Operations</span>
+            Core <span className="text-slate-500">Journey</span>
           </motion.h3>
         </div>
 
@@ -50,10 +50,10 @@ const Experience = () => {
               </div>
               
               <h4 className="text-2xl font-bold text-white mb-2">Founder & Lead Mentor</h4>
-              <p className="text-emerald-400 font-medium mb-4">School IT Club</p>
+              <p className="text-emerald-400 font-medium mb-4">IT Community Initiative</p>
               
               <p className="text-slate-400 leading-relaxed max-w-xl">
-                Mendirikan inisiatif teknologi pertama yang dipimpin siswa dengan fokus pada rekayasa perangkat lunak pragmatis dan prinsip keamanan defensif. Mengembangkan kurikulum yang berpusat pada praktik pengkodean aman, dasar-dasar CTF, dan administrasi sistem. Membimbing 30+ siswa dalam bertransformasi dari konsumen pasif menjadi pembangun aktif.
+                Membangun komunitas teknologi yang berfokus pada pengembangan perangkat lunak dan literasi digital. Mengembangkan kurikulum yang mencakup dasar-dasar pemrograman hingga sistem administrasi. Telah membimbing lebih dari 30 siswa untuk memahami logika pemrograman dan etika dalam dunia teknologi.
               </p>
             </div>
           </motion.div>
@@ -74,11 +74,11 @@ const Experience = () => {
               </div>
             </div>
             
-            <h4 className="text-xl font-bold text-white mb-2">Junior IT Support</h4>
+            <h4 className="text-xl font-bold text-white mb-2">Technical Support</h4>
             <p className="text-cyan-400 font-medium text-sm mb-4">Local Enterprise</p>
             
             <p className="text-slate-400 text-sm leading-relaxed">
-              Memelihara infrastruktur jaringan, menyelesaikan anomali perangkat keras, dan menegakkan kepatuhan keamanan endpoint dasar. Mendapatkan pengalaman langsung dengan manajemen identitas dan triase insiden tier 1.
+              Mengelola infrastruktur IT, pemeliharaan sistem, dan memberikan solusi teknis harian. Memastikan kelancaran operasional digital melalui monitoring proaktif dan penanganan masalah secara efisien.
             </p>
           </motion.div>
 
@@ -92,10 +92,10 @@ const Experience = () => {
           >
             <div className="flex items-center gap-4 mb-6">
               <div className="p-3 bg-indigo-500/10 rounded-xl border border-indigo-500/20 text-indigo-400">
-                <ShieldAlert size={24} />
+                <Lightbulb size={24} />
               </div>
               <div>
-                <h4 className="text-lg font-bold text-white">Independent Researcher</h4>
+                <h4 className="text-lg font-bold text-white">Technical Research</h4>
                 <p className="text-indigo-400 text-sm">Continuous Learning</p>
               </div>
             </div>
@@ -103,15 +103,15 @@ const Experience = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-sm text-slate-400">
                 <span className="text-emerald-500 mt-1">▹</span>
-                Peserta aktif dalam kompetisi Capture The Flag (CTF) lokal dan daring.
+                Eksplorasi mendalam pada teknologi web modern dan arsitektur sistem.
               </li>
               <li className="flex items-start gap-3 text-sm text-slate-400">
                 <span className="text-emerald-500 mt-1">▹</span>
-                Melakukan uji penetrasi terkendali pada lingkungan lab pribadi (HackTheBox, TryHackMe).
+                Analisis tren teknologi terbaru untuk implementasi solusi yang lebih efisien.
               </li>
               <li className="flex items-start gap-3 text-sm text-slate-400">
                 <span className="text-emerald-500 mt-1">▹</span>
-                Menganalisis sampel malware di lingkungan sandbox untuk memahami mekanisme persistensi.
+                Aktif dalam diskusi komunitas teknis untuk memperluas wawasan profesional.
               </li>
             </ul>
           </motion.div>

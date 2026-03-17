@@ -43,10 +43,10 @@ const Hero = () => {
               I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Muhamad Abiyan Hafidz (Aby)</span>
             </h1>
             <h2 className="text-2xl lg:text-3xl font-semibold text-slate-200 mb-6">
-              Crafting Secure & Robust Digital Experiences.
+              Engineering High-Performance & Resilient Digital Solutions.
             </h2>
             <p className="text-xl text-slate-400 max-w-lg leading-relaxed">
-              Seorang Web Developer dan Cybersecurity Enthusiast yang berdedikasi untuk menciptakan solusi digital yang aman. Berpengalaman dalam memimpin komunitas IT dan berkomitmen untuk terus meningkatkan integritas digital melalui kode yang tangguh.
+              Seorang Software Engineer yang berdedikasi untuk membangun aplikasi web yang modern dan efisien. Saya fokus pada arsitektur yang kokoh dan pengalaman pengguna yang seamless, dengan perhatian mendalam pada integritas dan keandalan sistem.
             </p>
           </motion.div>
 
@@ -61,14 +61,14 @@ const Hero = () => {
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-[#0F172A] font-semibold transition-all group"
             >
               <Code2 size={20} />
-              View My Work
+              Explore My Work
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </a>
             <a 
               href="#contact" 
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium transition-colors"
             >
-              Get In Touch
+              Connect with Me
             </a>
           </motion.div>
         </div>
@@ -115,7 +115,7 @@ const Hero = () => {
                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent flex items-end p-6">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
-                        <span className="text-white font-medium text-sm">Online</span>
+                        <span className="text-white font-medium text-sm">Available for work</span>
                       </div>
                    </div>
                 </div>
@@ -130,15 +130,15 @@ const Hero = () => {
                        <User size={64} className="text-emerald-500/50" />
                     </div>
                     <div className="absolute -bottom-2 -right-2 bg-emerald-500 p-2 rounded-lg shadow-lg">
-                       <ShieldCheck size={20} className="text-slate-900" />
+                       <Code2 size={20} className="text-slate-900" />
                     </div>
                   </div>
                   <div className="text-center">
                     <h3 className="text-3xl font-bold text-white tracking-widest uppercase font-mono">aby</h3>
-                    <p className="text-emerald-400 text-sm mt-1 font-medium">Cybersecurity Enthusiast</p>
+                    <p className="text-emerald-400 text-sm mt-1 font-medium">Software Engineer</p>
                   </div>
                   <div className="mt-4 px-6 py-2 rounded-full bg-white/5 border border-white/10">
-                     <p className="text-slate-400 text-xs font-mono italic">"Curiosity is my driver"</p>
+                     <p className="text-slate-400 text-xs font-mono italic">"Precision in every line"</p>
                   </div>
                 </div>
               </motion.div>
@@ -159,7 +159,7 @@ const Hero = () => {
                 <div className="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center">
                   <ShieldCheck size={18} className="text-emerald-400" />
                 </div>
-                <p className="text-sm font-medium text-slate-300">Ready to Secure</p>
+                <p className="text-sm font-medium text-slate-300">Resilient by Design</p>
               </div>
             </motion.div>
           </motion.div>

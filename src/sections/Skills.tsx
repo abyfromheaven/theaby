@@ -5,33 +5,33 @@ import { Code, Terminal, Layers } from 'lucide-react';
 const Skills = () => {
   const categories = [
     {
-      title: "Offensive & Defensive Security",
-      icon: <Terminal className="w-6 h-6 text-emerald-400" />,
-      skills: [
-        { name: "Web Application Pentesting", context: "Diterapkan pada: TryHackMe & Acara CTF Lokal" },
-        { name: "Forensik Jaringan", context: "Diterapkan pada: Triase Dukungan IT (Wireshark)" },
-        { name: "Analisis Statis Malware", context: "Diterapkan pada: Dokumen Penelitian Pribadi" },
-        { name: "Pengumpulan OSINT", context: "Diterapkan pada: Rekognisi Bug Bounty" },
-      ]
-    },
-    {
       title: "Software Engineering",
       icon: <Code className="w-6 h-6 text-cyan-400" />,
       skills: [
-        { name: "React / Vite / Tailwind", context: "Diterapkan pada: LMS Learnify & Portofolio Ini" },
-        { name: "Python / OpenCV", context: "Diterapkan pada: Sistem Autentikasi FAST" },
-        { name: "Node.js / Express", context: "Diterapkan pada: API REST yang Aman" },
-        { name: "PostgreSQL / SQLite", context: "Diterapkan pada: Penyimpanan Data Persisten" }
+        { name: "React / Vite / Tailwind", context: "Diterapkan pada: Platform LMS & Portfolio" },
+        { name: "Python / OpenCV", context: "Diterapkan pada: Sistem Autentikasi AI" },
+        { name: "Node.js / Express / REST", context: "Diterapkan pada: Arsitektur Backend" },
+        { name: "Database Management", context: "Diterapkan pada: PostgreSQL & SQLite" }
+      ]
+    },
+    {
+      title: "Digital Integrity & Security",
+      icon: <Terminal className="w-6 h-6 text-emerald-400" />,
+      skills: [
+        { name: "Security Auditing", context: "Diterapkan pada: Analisis Kerentanan Web" },
+        { name: "Network Analysis", context: "Diterapkan pada: Monitoring Infrastruktur" },
+        { name: "Security Research", context: "Diterapkan pada: Eksplorasi Ancaman Digital" },
+        { name: "Open-Source Intelligence", context: "Diterapkan pada: Riset Data Publik" },
       ]
     },
     {
       title: "Systems & Infrastructure",
       icon: <Layers className="w-6 h-6 text-indigo-400" />,
       skills: [
-        { name: "Linux Administration", context: "Diterapkan pada: Manajemen Server sebagai IT Support" },
-        { name: "Docker Containerization", context: "Diterapkan pada: Deployment Aplikasi AmanDulu" },
-        { name: "Git / Kontrol Versi", context: "Diterapkan pada: Kolaborasi Tim di Klub IT" },
-        { name: "Scripting Bash", context: "Diterapkan pada: Tugas Otomasi Kustom" }
+        { name: "Linux Administration", context: "Diterapkan pada: Manajemen Server" },
+        { name: "Docker Containerization", context: "Diterapkan pada: Deployment Aplikasi" },
+        { name: "Git / Version Control", context: "Diterapkan pada: Kolaborasi Tim" },
+        { name: "Bash & Automation", context: "Diterapkan pada: Optimasi Workflow" }
       ]
     }
   ];

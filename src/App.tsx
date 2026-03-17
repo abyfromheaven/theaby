@@ -3,6 +3,7 @@ import Projects from "./sections/Projects";
 import Experience from "./sections/Experience";
 import Documents from "./sections/Documents";
 import Skills from "./sections/Skills";
+import Certificates from "./sections/Certificates";
 import Contact from "./sections/Contact";
 import Layout from './components/ui/Layout'
 import Hero from './sections/Hero'
@@ -23,15 +24,7 @@ function App() {
       <Experience />
       <Documents />
       <Skills />
-      {/* 
-        Other sections will go here:
-        <AboutSection />
-        <ProjectsSection />
-        <ExperienceSection />
-        <DocumentsSection />
-        <SkillsSection />
-        <ContactSection />
-      */}
+      <Certificates />
       <Contact />
     </Layout>
   )
