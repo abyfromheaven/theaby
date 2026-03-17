@@ -1,6 +1,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Github, Lock, Layout } from 'lucide-react';
+import fastPreview from '../assets/fast_preview.jpg';
 
 const Projects = () => {
   const projects = [
@@ -10,8 +11,9 @@ const Projects = () => {
       description: "Sistem absensi berbasis AI menggunakan OpenCV LBPH. Dirancang dengan validasi ganda dan pemrosesan data lokal yang aman untuk mencegah spoofing dan akses tidak sah.",
       insight: "Mengimplementasikan langkah-langkah anti-spoofing dengan menganalisis kedalaman wajah dan variasi pencahayaan, memastikan autentikasi dengan tingkat kepercayaan tinggi sebelum memberikan akses sistem.",
       tech: ["Python", "OpenCV", "SQLite", "Tkinter"],
-      link: "#",
-      github: "#",
+      link: "https://abyfromheaven.github.io/FAST/",
+      github: "https://github.com/abyfromheaven/FAST",
+      image: fastPreview,
       // Representational image gradients for now
       bgGradient: "from-emerald-900/40 to-slate-900"
     },
@@ -74,20 +76,58 @@ const Projects = () => {
                 transition={{ duration: 0.6 }}
                 className="w-full lg:w-1/2"
               >
-                <a href={project.link} className="block group relative rounded-2xl overflow-hidden aspect-video border border-white/10 bg-slate-800">
+                <a 
+                  href={project.link} 
+                  target={project.link !== "#" ? "_blank" : undefined}
+                  rel={project.link !== "#" ? "noopener noreferrer" : undefined}
+                  className="block group relative rounded-2xl overflow-hidden aspect-video border border-white/10 bg-slate-800"
+                >
                   <div className={`absolute inset-0 bg-gradient-to-br ${project.bgGradient} opacity-80 group-hover:opacity-100 transition-opacity duration-500`}></div>
                   
-                  {/* Abstract UI representation */}
-                  <div className="absolute inset-4 rounded-xl border border-white/5 bg-slate-950/50 backdrop-blur-sm p-4 flex flex-col gap-4 transform group-hover:scale-[1.02] transition-transform duration-500 shadow-2xl">
-                    <div className="flex items-center gap-2 border-b border-white/5 pb-2">
-                       <div className="w-3 h-3 rounded-full bg-rose-500/50"></div>
-                       <div className="w-3 h-3 rounded-full bg-amber-500/50"></div>
-                       <div className="w-3 h-3 rounded-full bg-emerald-500/50"></div>
+                  {project.image ? (
+                    <motion.div 
+                      animate={{ y: [0, -15, 0] }}
+                      transition={{ 
+                        duration: 4, 
+                        repeat: Infinity, 
+                        ease: "easeInOut" 
+                      }}
+                      className="absolute inset-4 rounded-xl border border-white/10 bg-slate-950 shadow-2xl flex flex-col overflow-hidden"
+                    >
+                      {/* macOS Window Header */}
+                      <div className="flex items-center gap-2 px-4 py-3 border-b border-white/5 bg-slate-900/50">
+                         <div className="w-2.5 h-2.5 rounded-full bg-rose-500/50"></div>
+                         <div className="w-2.5 h-2.5 rounded-full bg-amber-500/50"></div>
+                         <div className="w-2.5 h-2.5 rounded-full bg-emerald-500/50"></div>
+                         <div className="ml-2 text-[10px] font-mono text-slate-500 uppercase tracking-widest hidden sm:block">
+                           {project.title.split(' ')[0]} Explorer
+                         </div>
+                      </div>
+                      
+                      {/* Window Content (Image) */}
+                      <div className="flex-1 overflow-hidden relative">
+                        <img 
+                          src={project.image} 
+                          alt={project.title} 
+                          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" 
+                        />
+                        {/* Subtle overlay for depth */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 to-transparent pointer-events-none"></div>
+                      </div>
+                    </motion.div>
+                  ) : (
+                    /* Abstract UI representation */
+                    <div className="absolute inset-4 rounded-xl border border-white/5 bg-slate-950/50 backdrop-blur-sm p-4 flex flex-col gap-4 transform group-hover:scale-[1.02] transition-transform duration-500 shadow-2xl">
+                      <div className="flex items-center gap-2 border-b border-white/5 pb-2">
+                         <div className="w-3 h-3 rounded-full bg-rose-500/50"></div>
+                         <div className="w-3 h-3 rounded-full bg-amber-500/50"></div>
+                         <div className="w-3 h-3 rounded-full bg-emerald-500/50"></div>
+                      </div>
+                      <div className="flex-1 rounded border border-white/5 bg-white/5 flex items-center justify-center">
+                         <Layout className="w-12 h-12 text-slate-600 opacity-50" />
+                      </div>
                     </div>
-                    <div className="flex-1 rounded border border-white/5 bg-white/5 flex items-center justify-center">
-                       <Layout className="w-12 h-12 text-slate-600 opacity-50" />
-                    </div>
-                  </div>
+                  )}
                 </a>
               </motion.div>
 
@@ -126,10 +166,20 @@ const Projects = () => {
                 </div>
 
                 <div className="flex items-center gap-6 pt-4">
-                  <a href={project.github} className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 text-sm font-medium">
+                  <a 
+                    href={project.github} 
+                    target={project.github !== "#" ? "_blank" : undefined}
+                    rel={project.github !== "#" ? "noopener noreferrer" : undefined}
+                    className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 text-sm font-medium"
+                  >
                     <Github className="w-5 h-5" /> Code
                   </a>
-                  <a href={project.link} className="text-slate-400 hover:text-emerald-400 transition-colors flex items-center gap-2 text-sm font-medium">
+                  <a 
+                    href={project.link} 
+                    target={project.link !== "#" ? "_blank" : undefined}
+                    rel={project.link !== "#" ? "noopener noreferrer" : undefined}
+                    className="text-slate-400 hover:text-emerald-400 transition-colors flex items-center gap-2 text-sm font-medium"
+                  >
                     View Live <ArrowUpRight className="w-4 h-4" />
                   </a>
                 </div>
@@ -145,3 +195,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
